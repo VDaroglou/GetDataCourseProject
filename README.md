@@ -8,6 +8,6 @@ The source data is available from http://archive.ics.uci.edu/ml/datasets/Human+A
 
 This Repo contains:
 - **tidydataset.txt**	The tidy data set
-- **CodeBook.md** 		CodeBook that describes the variables, the data, and any transformations or work that you performed                             to clean up the data
-- **README.md**			  This file. README.md describes the overall process
+- **CodeBook.md** 		Describes the variables, the data, and any transformations performed to clean up the data
+- **README.md**			  This file. README.md describes the overall process.
 
