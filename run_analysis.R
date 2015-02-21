@@ -4,7 +4,7 @@ library(reshape2)
 
 
 
-## STEP 1: Merges the training and the test sets to create one data set
+# STEP 1: Merges the training and the test sets to create one data set
 
 # read data into data frames
 subject_test <- read.table("UCI HAR Dataset\\test\\subject_test.txt")
@@ -37,8 +37,8 @@ combined_data <- rbind(train, test)
 
 
 
-## STEP 2: Extracts only the measurements on the mean and standard deviation
-## for each measurement.
+# STEP 2: Extracts only the measurements on the mean and standard deviation
+# for each measurement.
 
 # determine which columns contain "mean()" or "std()" and
 # keep the subjectID and activity columns
@@ -48,3 +48,24 @@ meanstdcolumns <- grepl("mean\\(\\)", names(combined_data)) |
 meanstdcolumns[1:2] <- TRUE
 
 meanstd_data <- combined_data[, meanstdcolumns]
+
+
+
+# STEP 3: Uses descriptive activity names to name the activities
+# in the data set.
+
+# read activity labels
+activity_labels<-read.table("UCI HAR Dataset\\activity_labels.txt")
+activity_labels$V2 <- gsub("_"," ", activity_labels$V2)
+
+
+# change the activity column from number to descriptive activity names
+meanstd_data$activity <- factor(meanstd_data$activity, labels = activity_labels$V2)
+
+
+# STEP 4: Appropriately labels the data set with descriptive
+# activity names.
+# (See codebook.md for an explanation of the variable names.)
+
+names(meanstd_data) <- make.names(names(meanstd_data))
+
