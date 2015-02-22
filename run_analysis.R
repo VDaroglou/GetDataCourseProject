@@ -68,4 +68,27 @@ meanstd_data$activity <- factor(meanstd_data$activity, labels = activity_labels$
 # (See codebook.md for an explanation of the variable names.)
 
 names(meanstd_data) <- make.names(names(meanstd_data))
+names(meanstd_data) <- gsub("\\.", "", names(meanstd_data))
+names(meanstd_data) <- gsub("BodyBody", "Body", names(meanstd_data))
+names(meanstd_data) <- gsub("tBody", "Body", names(meanstd_data))
+names(meanstd_data) <- gsub("fBody", "FFTBody", names(meanstd_data))
+names(meanstd_data) <- gsub("tGravity", "Gravity", names(meanstd_data))
+names(meanstd_data) <- gsub("fGravity", "FFTGravity", names(meanstd_data))
+names(meanstd_data) <- gsub("Acc", "Acceleration", names(meanstd_data))
+names(meanstd_data) <- gsub("Gyro", "AngularVelocity", names(meanstd_data))
+names(meanstd_data) <- gsub("Mag", "Magnitude", names(meanstd_data))
+names(meanstd_data) <- gsub("std", "SD", names(meanstd_data))
+names(meanstd_data) <- gsub("mean", "Mean", names(meanstd_data))
+names(meanstd_data) <- gsub("X", "XAxis", names(meanstd_data))
+names(meanstd_data) <- gsub("Y", "YAxis", names(meanstd_data))
+names(meanstd_data) <- gsub("Z", "ZAxis", names(meanstd_data))
 
+
+
+# STEP 5: From the data set in step 4, creates a second, independent tidy data
+# set with the average of each variable for each activity and each subject
+
+tidy_data <-ddply(meanstd_data, c("SubjectID","Activity"), numcolwise(mean))
+
+# write the tidy data set to a file for project submission
+write.table(tidy_data, "tidy_data_set.txt", row.names=FALSE)
