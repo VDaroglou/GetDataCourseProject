@@ -9,5 +9,5 @@ The source data is available from http://archive.ics.uci.edu/ml/datasets/Human+A
 ## Raw Data transformation
 The raw data sets are processed with the script [run_analysis.R](./run_analysis.R) script to create a tidy data set.
 The steps perfomed are:
-1.  Merge the training and the test sets to create one data set. This analysis was performed using only the files above,     and did not use the raw signal data. Therefore, the data files in the "Inertial Signals" folders were ignored.(561       variable columns total, in the initial combined data set; 563 columns including the TestSubject and Activity columns;     10299 observations - row)
+1.  Merge the training and the test sets to create one data set. This analysis was performed using only the files above,     and did not use the raw signal data. Therefore, the data files in the "Inertial Signals" folders were ignored.561       variable columns total, in the initial combined data set; 563 columns including the TestSubject and Activity columns;     10299 observations - row
 2.  Extract only the measurements on the mean and standard deviation for each measurement.
