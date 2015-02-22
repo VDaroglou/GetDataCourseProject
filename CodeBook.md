@@ -162,3 +162,15 @@ The variables in this tidy data set are a subset of the variables described in t
 67. **FFTBodyAngularVelocityJerkMagnitudeMean** - The mean of the angular velocity magnitude derived in time to obtain Jerk signals, with a Fast Fourier Transform (FFT) applied.
 
 68. **FFTBodyAngularVelocityJerkMagnitudeSD** - The standard deviation of the angular velocity magnitude derived in time to obtain Jerk signals, with a Fast Fourier Transform (FFT) applied.
+
+## Note - Variable naming
+
+I updated the feature variable names in the tidy data to make it easier to understand the measurement of each column. The names use the following conventions:
+
+- Either **Body** or **Gravity** is included to indicate the type of signal
+- Either **Acceleration** or **AngularVelocity** is included to indicate the type of measurement. I replaced "Gyro" with "AngularVelocity" since that's what the gyroscope is measuring.
+- The word(s) **Mean** or **SD** indicates the type of metric, **Mean** or **Standard Deviation**
+- **XAxis**, **YAxis**, and **ZAxis** indicate a measurement for the X, Y, or Z axis.
+- **Magnitude** indicates a magnitude calculation
+- **Jerk** indicates a measure where the body linear acceleration and angular velocity were derived in time to obtain Jerk signals
+- **FFT** is included, if applicable, to indicate that the measurement had a Fast Fourier Transform (FFT) applied. 
