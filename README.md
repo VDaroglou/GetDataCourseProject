@@ -20,6 +20,8 @@ This Repo contains:
 4. Open a R console and set the working directory to the repository root
 5. Run [run_analysis.R](./run_analysis.R) script
 
+
+
 **NOTES:** 
 
 1. [run_analysis.R](./run_analysis.R) script requires **plyr** and **reshape2** packages. Be sure to install them, if needed, before running the R script.
