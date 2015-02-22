@@ -27,7 +27,7 @@ The variables in this tidy data set are a subset of the variables described in t
 	>Values: integer from 1 to 30
 
 2. **Activity** - A factor that identifies the activity being performed
-	> Values: Walking, WalkingUpStairs, WalkingDownStairs, Sitting, Standing, Lying
+	> Values: WALKING, WALKING UPSTAIRS, WALKING DOWNSTAIRS, SITTING, STANDING, LAYING
 
 	***The feature variables below (#3 - #68) are each an average of the values collected for the test subject and activity specified in the data row. For each, the value is a numeric normalized and bounded within [-1, 1]***
 
@@ -37,128 +37,128 @@ The variables in this tidy data set are a subset of the variables described in t
 
 5. **BodyAccelerationMeanZAxis** - The mean of the body acceleration on the Z axis.
 
-6. **GravityAccelerationMeanXAxis** - The mean of the gravity acceleration on the X axis. 
+6. **BodyAccelerationSDXAxis** - The standard deviation of the body acceleration on the X axis.
 
-7. **GravityAccelerationMeanYAxis** - The mean of the gravity acceleration on the Y axis.
+7. **BodyAccelerationSDYAxis** - The standard deviation of the body acceleration on the Y axis.
 
-8. **GravityAccelerationMeanZAxis** - The mean of the gravity acceleration on the Z axis.
+8. **BodyAccelerationSDZAxis** - The standard deviation of the body acceleration on the Z axis.
 
-9. **BodyAccelerationJerkMeanXAxis** - The mean of the body acceleration on the X axis, derived in time to obtain Jerk signals. 
+9. **GravityAccelerationMeanXAxis** - The mean of the gravity acceleration on the X axis.
 
-10. **MeanBodyAccelerationJerkYAxis** - The mean of the body acceleration on the Y axis, derived in time to obtain Jerk signals.
+10. **GravityAccelerationMeanYAxis** - The mean of the gravity acceleration on the Y axis.
 
-11. **MeanBodyAccelerationJerkZAxis** - The mean of the body acceleration on the Z axis, derived in time to obtain Jerk signals.
+11. **GravityAccelerationMeanZAxis** - The mean of the gravity acceleration on the Z axis.
 
-12. **MeanBodyAngularVelocityXAxis** - The mean of the body angular velocity on the X axis.
+12. **GravityAccelerationSDXAxis** - The standard deviation of the gravity acceleration on the X axis. 
 
-13. **MeanBodyAngularVelocityYAxis** - The mean of the body angular velocity on the Y axis.
+13. **GravityAccelerationSDYAxis** - The standard deviation of the gravity acceleration on the Y axis.
 
-14. **MeanBodyAngularVelocityZAxis** - The mean of the body angular velocity on the Z axis.
+14. **GravityAccelerationSDZAxis** - The standard deviation of the gravity acceleration on the Z axis.  
 
-15. **MeanBodyAngularVelocityJerkXAxis** - The mean of the body angular velocity on the X axis, derived in time to obtain Jerk signals.
+15. **BodyAccelerationJerkMeanXAxis** - The mean of the body acceleration on the X axis, derived in time to obtain Jerk signals. 
 
-16. **MeanBodyAngularVelocityJerkYAxis** - The mean of the body angular velocity on the Y axis, derived in time to obtain Jerk signals.
+16. **BodyAccelerationJerkMeanYAxis** - The mean of the body acceleration on the Y axis, derived in time to obtain Jerk signals.
 
-17. **MeanBodyAngularVelocityJerkZAxis** - The mean of the body angular velocity on the Z axis, derived in time to obtain Jerk signals.
+17. **BodyAccelerationJerkMeanZAxis** - The mean of the body acceleration on the Z axis, derived in time to obtain Jerk signals.  
 
-18. **MeanBodyAccelerationMagnitude** - The mean of the body acceleration magnitude, calculated using the Euclidean norm.
+18. **BodyAccelerationJerkSDXAxis** - The standard deviation of the body acceleration on the X axis, derived in time to obtain Jerk signals. 
 
-19. **MeanGravityAccelerationMagnitude** - The mean of the gravity acceleration magnitude.
+19. **BodyAccelerationJerkSDYAxis** - The standard deviation of the body acceleration on the Y axis, derived in time to obtain Jerk signals.
 
-20. **MeanBodyAccelerationJerkMagnitude** - The mean of the body acceleration magnitude derived in time to obtain Jerk signals.
+20. **BodyAccelerationJerkSDZAxis** - The standard deviation of the body acceleration on the Z axis, derived in time to obtain Jerk signals.
 
-21. **MeanBodyAngularVelocityMagnitude** - The mean of the angular velocity magnitude.
+21. **BodyAngularVelocityMeanXAxis** - The mean of the body angular velocity on the X axis.
 
-22. **MeanBodyAngularVelocityJerkMagnitude** - The mean of the angular velocity magnitude derived in time to obtain Jerk signals.
+22. **BodyAngularVelocityMeanYAxis** - The mean of the body angular velocity on the Y axis.
 
-23. **MeanFFTBodyAccelerationXAxis** - The mean of the body acceleration on the X axis, with a Fast Fourier Transform (FFT) applied. 
+23. **BodyAngularVelocityMeanZAxis** - The mean of the body angular velocity on the Z axis.
 
-24. **MeanFFTBodyAccelerationYAxis** - The mean of the body acceleration on the Y axis, with a Fast Fourier Transform (FFT) applied.
+24. **BodyAngularVelocitySDXAxis** - The standard deviation of the body angular velocity on the X axis. 
 
-25. **MeanFFTBodyAccelerationZAxis** - The mean of the body acceleration on the Z axis, with a Fast Fourier Transform (FFT) applied.
+25. **BodyAngularVelocitySDYAxis** - The standard deviation of the body angular velocity on the Y axis.
 
-26. **MeanFFTBodyAccelerationJerkXAxis** - The mean of the body acceleration on the X axis, derived in time to obtain Jerk signals, with a Fast Fourier Transform (FFT) applied. 
+26. **BodyAngularVelocitySDZAxis** - The standard deviation of the body angular velocity on the Z axis.
 
-27. **MeanFFTBodyAccelerationJerkYAxis** - The mean of the body acceleration on the Y axis, derived in time to obtain Jerk signals, with a Fast Fourier Transform (FFT) applied.
+27. **BodyAngularVelocityJerkMeanXAxis** - The mean of the body angular velocity on the X axis, derived in time to obtain Jerk signals.
 
-28. **MeanFFTBodyAccelerationJerkZAxis** - The mean of the body acceleration on the Z axis, derived in time to obtain Jerk signals, with a Fast Fourier Transform (FFT) applied.
+28. **BodyAngularVelocityJerkMeanYAxis** - The mean of the body angular velocity on the Y axis, derived in time to obtain Jerk signals.
 
-29. **MeanFFTBodyAngularVelocityXAxis** - The mean of the body angular velocity on the X axis, with a Fast Fourier Transform (FFT) applied.
+29. **BodyAngularVelocityJerkMeanZAxis** - The mean of the body angular velocity on the Z axis, derived in time to obtain Jerk signals.
 
-30. **MeanFFTBodyAngularVelocityYAxis** - The mean of the body angular velocity on the Y axis, with a Fast Fourier Transform (FFT) applied.
+30. **BodyAngularVelocityJerkSDXAxis** - The standard deviation of the body angular velocity on the X axis, derived in time to obtain Jerk signals. 
 
-31. **MeanFFTBodyAngularVelocityZAxis** - The mean of the body angular velocity on the Z axis, with a Fast Fourier Transform (FFT) applied.
+31. **BodyAngularVelocityJerkSDYAxis** - The standard deviation of the body angular velocity on the Y axis, derived in time to obtain Jerk signals.
 
-32. **MeanFFTBodyAccelerationMagnitude** - The mean of the body acceleration magnitude, with a Fast Fourier Transform (FFT) applied.
+32. **BodyAngularVelocityJerkSDZAxis** - The standard deviation of the body angular velocity on the Z axis, derived in time to obtain Jerk signals.
 
-33. **MeanFFTBodyAccelerationJerkMagnitude** - The mean of the body acceleration magnitude derived in time to obtain Jerk signals, with a Fast Fourier Transform (FFT) applied.
+33. **BodyAccelerationMagnitudeMean** - The mean of the body acceleration magnitude, calculated using the Euclidean norm.
 
-34. **MeanFFTBodyAngularVelocityMagnitude** - The mean of the angular velocity magnitude, with a Fast Fourier Transform (FFT) applied.
+34. **BodyAccelerationMagnitudeSD** - The standard deviation of the body acceleration magnitude, calculated using the Euclidean norm.
 
-35. **MeanFFTBodyAngularVelocityJerkMagnitude** - The mean of the angular velocity magnitude derived in time to obtain Jerk signals, with a Fast Fourier Transform (FFT) applied.
+35. **GravityAccelerationMagnitudeMean** - The mean of the gravity acceleration magnitude.
 
-36. **StandardDeviationBodyAccelerationXAxis** - The standard deviation of the body acceleration on the X axis. 
+36. **GravityAccelerationMagnitudeSD** - The standard deviation of the gravity acceleration magnitude.
 
-37. **StandardDeviationBodyAccelerationYAxis** - The standard deviation of the body acceleration on the Y axis.
+37. **BodyAccelerationJerkMagnitudeMean** - The mean of the body acceleration magnitude derived in time to obtain Jerk signals.
 
-38. **StandardDeviationBodyAccelerationZAxis** - The standard deviation of the body acceleration on the Z axis.
+38. **BodyAccelerationJerkMagnitudeSD** - The standard deviation of the body acceleration magnitude derived in time to obtain Jerk signals.
 
-39. **StandardDeviationGravityAccelerationXAxis** - The standard deviation of the gravity acceleration on the X axis. 
+39. **BodyAngularVelocityMagnitudeMean** - The mean of the angular velocity magnitude.
 
-40. **StandardDeviationGravityAccelerationYAxis** - The standard deviation of the gravity acceleration on the Y axis.
+40. **BodyAngularVelocityMagnitudeSD** - The standard deviation of the angular velocity magnitude.
 
-41. **StandardDeviationGravityAccelerationZAxis** - The standard deviation of the gravity acceleration on the Z axis.
+41. **BodyAngularVelocityJerkMagnitudeMean** - The mean of the angular velocity magnitude derived in time to obtain Jerk signals.
 
-42. **StandardDeviationBodyAccelerationJerkXAxis** - The standard deviation of the body acceleration on the X axis, derived in time to obtain Jerk signals. 
+42. **BodyAngularVelocityJerkMagnitudeSD** - The standard deviation of the angular velocity magnitude derived in time to obtain Jerk signals.
 
-43. **StandardDeviationBodyAccelerationJerkYAxis** - The standard deviation of the body acceleration on the Y axis, derived in time to obtain Jerk signals.
+43. **FFTBodyAccelerationMeanXAxis** - The mean of the body acceleration on the X axis, with a Fast Fourier Transform (FFT) applied. 
 
-44. **StandardDeviationBodyAccelerationJerkZAxis** - The standard deviation of the body acceleration on the Z axis, derived in time to obtain Jerk signals.
+44. **FFTBodyAccelerationMeanYAxis** - The mean of the body acceleration on the Y axis, with a Fast Fourier Transform (FFT) applied.
 
-45. **StandardDeviationBodyAngularVelocityXAxis** - The standard deviation of the body angular velocity on the X axis. 
+45. **FFTBodyAccelerationMeanZAxis** - The mean of the body acceleration on the Z axis, with a Fast Fourier Transform (FFT) applied.
 
-46. **StandardDeviationBodyAngularVelocityYAxis** - The standard deviation of the body angular velocity on the Y axis.
+46. **FFTBodyAccelerationSDXAxis** - The standard deviation of the body acceleration on the X axis, with a Fast Fourier Transform (FFT) applied. 
 
-47. **StandardDeviationBodyAngularVelocityZAxis** - The standard deviation of the body angular velocity on the Z axis.
+47. **FFTBodyAccelerationSDYAxis** - The standard deviation of the body acceleration on the Y axis, with a Fast Fourier Transform (FFT) applied.
 
-48. **StandardDeviationBodyAngularVelocityJerkXAxis** - The standard deviation of the body angular velocity on the X axis, derived in time to obtain Jerk signals. 
+48. **FFTBodyAccelerationSDZAxis** - The standard deviation of the body acceleration on the Z axis, with a Fast Fourier Transform (FFT) applied.
 
-49. **StandardDeviationBodyAngularVelocityJerkYAxis** - The standard deviation of the body angular velocity on the Y axis, derived in time to obtain Jerk signals.
+49. **FFTBodyAccelerationJerkMeanXAxis** - The mean of the body acceleration on the X axis, derived in time to obtain Jerk signals, with a Fast Fourier Transform (FFT) applied. 
 
-50. **StandardDeviationBodyAngularVelocityJerkZAxis** - The standard deviation of the body angular velocity on the Z axis, derived in time to obtain Jerk signals.
+50. **FFTBodyAccelerationJerkMeanYAxis** - The mean of the body acceleration on the Y axis, derived in time to obtain Jerk signals, with a Fast Fourier Transform (FFT) applied.
 
-51. **StandardDeviationBodyAccelerationMagnitude** - The standard deviation of the body acceleration magnitude, calculated using the Euclidean norm.
+51. **FFTBodyAccelerationJerkMeanZAxis** - The mean of the body acceleration on the Z axis, derived in time to obtain Jerk signals, with a Fast Fourier Transform (FFT) applied.
 
-52. **StandardDeviationGravityAccelerationMagnitude** - The standard deviation of the gravity acceleration magnitude.
+52. **FFTBodyAccelerationJerkSDXAxis** - The standard deviation of the body angular velocity on the X axis, derived in time to obtain Jerk signals, with a Fast Fourier Transform (FFT) applied. 
 
-53. **StandardDeviationBodyAccelerationJerkMagnitude** - The standard deviation of the body acceleration magnitude derived in time to obtain Jerk signals.
+53. **FFTBodyAccelerationJerkSDYAxis** - The standard deviation of the body angular velocity on the Y axis, derived in time to obtain Jerk signals, with a Fast Fourier Transform (FFT) applied.
 
-54. **StandardDeviationBodyAngularVelocityMagnitude** - The standard deviation of the angular velocity magnitude.
+54. **FFTBodyAccelerationJerkSDZAxis** - The standard deviation of the body angular velocity on the Z axis, derived in time to obtain Jerk signals, with a Fast Fourier Transform (FFT) applied.
 
-55. **StandardDeviationBodyAngularVelocityJerkMagnitude** - The standard deviation of the angular velocity magnitude derived in time to obtain Jerk signals.
+55. **FFTBodyAngularVelocityMeanXAxis** - The mean of the body angular velocity on the X axis, with a Fast Fourier Transform (FFT) applied.
 
-56. **StandardDeviationFFTBodyAccelerationXAxis** - The standard deviation of the body acceleration on the X axis, with a Fast Fourier Transform (FFT) applied. 
+56. **FFTBodyAngularVelocityMeanYAxis** - The mean of the body angular velocity on the Y axis, with a Fast Fourier Transform (FFT) applied.
 
-57. **StandardDeviationFFTBodyAccelerationYAxis** - The standard deviation of the body acceleration on the Y axis, with a Fast Fourier Transform (FFT) applied.
+57. **FFTBodyAngularVelocityMeanZAxis** - The mean of the body angular velocity on the Z axis, with a Fast Fourier Transform (FFT) applied.
 
-58. **StandardDeviationFFTBodyAccelerationZAxis** - The standard deviation of the body acceleration on the Z axis, with a Fast Fourier Transform (FFT) applied.
+58. **FFTBodyAngularVelocitySDXAxis** - The standard deviation of the body angular velocity on the X axis, with a Fast Fourier Transform (FFT) applied. 
 
-59. **StandardDeviationFFTBodyAngularVelocityJerkXAxis** - The standard deviation of the body angular velocity on the X axis, derived in time to obtain Jerk signals, with a Fast Fourier Transform (FFT) applied. 
+59. **FFTBodyAngularVelocitySDYAxis** - The standard deviation of the body angular velocity on the Y axis, with a Fast Fourier Transform (FFT) applied.
 
-60. **StandardDeviationFFTBodyAngularVelocityJerkYAxis** - The standard deviation of the body angular velocity on the Y axis, derived in time to obtain Jerk signals, with a Fast Fourier Transform (FFT) applied.
+60. **FFTBodyAngularVelocitySDZAxis** - The standard deviation of the body angular velocity on the Z axis, with a Fast Fourier Transform (FFT) applied.
 
-61. **StandardDeviationFFTBodyAngularVelocityJerkZAxis** - The standard deviation of the body angular velocity on the Z axis, derived in time to obtain Jerk signals, with a Fast Fourier Transform (FFT) applied.
+61. **FFTBodyAccelerationMagnitudeMean** - The mean of the body acceleration magnitude, with a Fast Fourier Transform (FFT) applied.
 
-62. **StandardDeviationFFTBodyAngularVelocityXAxis** - The standard deviation of the body angular velocity on the X axis, with a Fast Fourier Transform (FFT) applied. 
+62. **FFTBodyAccelerationMagnitudeSD** - The standard deviation of the body acceleration magnitude, with a Fast Fourier Transform (FFT) applied.
 
-63. **StandardDeviationFFTBodyAngularVelocityYAxis** - The standard deviation of the body angular velocity on the Y axis, with a Fast Fourier Transform (FFT) applied.
+63. **FFTBodyAccelerationJerkMagnitudeMean** - The mean of the body acceleration magnitude derived in time to obtain Jerk signals, with a Fast Fourier Transform (FFT) applied.
 
-64. **StandardDeviationFFTBodyAngularVelocityZAxis** - The standard deviation of the body angular velocity on the Z axis, with a Fast Fourier Transform (FFT) applied.
+64. **FFTBodyAccelerationJerkMagnitudeSD** - The standard deviation of the body acceleration magnitude derived in time to obtain Jerk signals, with a Fast Fourier Transform (FFT) applied.
 
-65. **StandardDeviationFFTBodyAccelerationMagnitude** - The standard deviation of the body acceleration magnitude, with a Fast Fourier Transform (FFT) applied.
+65. **FFTBodyAngularVelocityMagnitudeMean** - The mean of the angular velocity magnitude, with a Fast Fourier Transform (FFT) applied.
 
-66. **StandardDeviationFFTBodyAccelerationJerkMagnitude** - The standard deviation of the body acceleration magnitude derived in time to obtain Jerk signals, with a Fast Fourier Transform (FFT) applied.
+66. **FFTBodyAngularVelocityMagnitudeSD** - The standard deviation of the angular velocity magnitude, with a Fast Fourier Transform (FFT) applied.
 
-67. **StandardDeviationFFTBodyAngularVelocityMagnitude** - The standard deviation of the angular velocity magnitude, with a Fast Fourier Transform (FFT) applied.
+67. **FFTBodyAngularVelocityJerkMagnitudeMean** - The mean of the angular velocity magnitude derived in time to obtain Jerk signals, with a Fast Fourier Transform (FFT) applied.
 
-68. **StandardDeviationFFTBodyAngularVelocityJerkMagnitude** - The standard deviation of the angular velocity magnitude derived in time to obtain Jerk signals, with a Fast Fourier Transform (FFT) applied.
+68. **FFTBodyAngularVelocityJerkMagnitudeSD** - The standard deviation of the angular velocity magnitude derived in time to obtain Jerk signals, with a Fast Fourier Transform (FFT) applied.
