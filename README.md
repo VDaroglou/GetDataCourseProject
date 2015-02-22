@@ -21,4 +21,4 @@ This Repo contains:
 5. Run [run_analysis.R](./run_analysis.R) script
 
 **NOTE:** [run_analysis.R](./run_analysis.R) script requires **plyr** and **reshape2** packages. Be sure to install them, if needed, before running the R script.
---------
+
