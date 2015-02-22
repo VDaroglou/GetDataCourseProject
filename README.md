@@ -20,5 +20,8 @@ This Repo contains:
 4. Open a R console and set the working directory to the repository root
 5. Run [run_analysis.R](./run_analysis.R) script
 
-**NOTE:** [run_analysis.R](./run_analysis.R) script requires **plyr** and **reshape2** packages. Be sure to install them, if needed, before running the R script.
+**NOTES:** 
+-----------
+1. [run_analysis.R](./run_analysis.R) script requires **plyr** and **reshape2** packages. Be sure to install them, if needed, before running the R script.
+2. The references to file locations in run_analysis.R are written to work with the **Windows** file system. You'll need to modify the file paths in the read.table calls to run on Mac/Linux systems.
 
