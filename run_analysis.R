@@ -4,7 +4,7 @@ library(reshape2)
 
 
 
-# STEP 1: Merges the training and the test sets to create one data set
+# STEP 1: Merge the training and the test sets to create one data set
 
 # read data into data frames
 subject_test <- read.table("UCI HAR Dataset\\test\\subject_test.txt")
@@ -19,16 +19,16 @@ y_train <- read.table("UCI HAR Dataset\\train\\y_train.txt")
 features <- read.table("UCI HAR Dataset\\features.txt")
 
 # rename column name for subject files
-names(subject_train) <- "subjectID"
-names(subject_test) <- "subjectID"
+names(subject_train) <- "SubjectID"
+names(subject_test) <- "SubjectID"
 
 # rename column names for measurment files, X_train and X_test
 names(X_train) <- features$V2
 names(X_test) <- features$V2
 
 # rename column name for activities files
-names(y_train) <- "activity"
-names(y_test) <- "activity"
+names(y_train) <- "Activity"
+names(y_test) <- "Activity"
 
 # merge the training and test sets into one data set
 train <- cbind(subject_train, y_train, X_train)
@@ -51,7 +51,7 @@ meanstd_data <- combined_data[, meanstdcolumns]
 
 
 
-# STEP 3: Uses descriptive activity names to name the activities
+# STEP 3: Use descriptive activity names to name the activities
 # in the data set.
 
 # read activity labels
@@ -60,11 +60,11 @@ activity_labels$V2 <- gsub("_"," ", activity_labels$V2)
 
 
 # change the activity column from number to descriptive activity names
-meanstd_data$activity <- factor(meanstd_data$activity, labels = activity_labels$V2)
+meanstd_data$Activity <- factor(meanstd_data$Activity, labels = activity_labels$V2)
 
 
 # STEP 4: Appropriately label the data set with descriptive
-# activity names.
+# variable names.
 # (See codebook.md for an explanation of the variable names.)
 
 names(meanstd_data) <- make.names(names(meanstd_data))
@@ -85,7 +85,7 @@ names(meanstd_data) <- gsub("Z", "ZAxis", names(meanstd_data))
 
 
 
-# STEP 5: From the data set in step 4, create a second, independent tidy data
+# STEP 5: From the data set in step 4, creates a second, independent tidy data
 # set with the average of each variable for each activity and each subject
 
 tidy_data <-ddply(meanstd_data, c("SubjectID","Activity"), numcolwise(mean))
