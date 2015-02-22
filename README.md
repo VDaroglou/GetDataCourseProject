@@ -18,3 +18,4 @@ This Repo contains:
 2. Download the zip file from [this URL](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip).
 3. Unzip .zip file in your working directory
 4. Open a R console and set the working directory to the repository root
+5. Run [run_analysis.R](./run_analysis.R) script
