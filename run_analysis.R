@@ -37,7 +37,7 @@ combined_data <- rbind(train, test)
 
 
 
-# STEP 2: Extracts only the measurements on the mean and standard deviation
+# STEP 2: Extract only the measurements on the mean and standard deviation
 # for each measurement.
 
 # determine which columns contain "mean()" or "std()" and
@@ -63,7 +63,7 @@ activity_labels$V2 <- gsub("_"," ", activity_labels$V2)
 meanstd_data$activity <- factor(meanstd_data$activity, labels = activity_labels$V2)
 
 
-# STEP 4: Appropriately labels the data set with descriptive
+# STEP 4: Appropriately label the data set with descriptive
 # activity names.
 # (See codebook.md for an explanation of the variable names.)
 
@@ -85,7 +85,7 @@ names(meanstd_data) <- gsub("Z", "ZAxis", names(meanstd_data))
 
 
 
-# STEP 5: From the data set in step 4, creates a second, independent tidy data
+# STEP 5: From the data set in step 4, create a second, independent tidy data
 # set with the average of each variable for each activity and each subject
 
 tidy_data <-ddply(meanstd_data, c("SubjectID","Activity"), numcolwise(mean))
