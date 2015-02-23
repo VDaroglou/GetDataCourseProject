@@ -174,3 +174,4 @@ I updated the feature variable names in the tidy data to make it easier to under
 - **Magnitude** indicates a magnitude calculation
 - **Jerk** indicates a measure where the body linear acceleration and angular velocity were derived in time to obtain Jerk signals
 - **FFT** is included, if applicable, to indicate that the measurement had a Fast Fourier Transform (FFT) applied. 
+
