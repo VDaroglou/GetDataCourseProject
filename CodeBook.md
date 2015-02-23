@@ -169,7 +169,7 @@ The variables in this tidy data set are a subset of the variables described in t
 
 68. **FFTBodyAngularVelocityJerkMagnitudeSD** - The standard deviation of the angular velocity magnitude derived in time to obtain Jerk signals, with a Fast Fourier Transform (FFT) applied.
 
-## Note - Variable naming
+### Note - Variable naming
 
 I updated the feature variable names in the tidy data to make it easier to understand the measurement of each column. The names use the following conventions:
 
