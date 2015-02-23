@@ -16,6 +16,7 @@ The steps perfomed are:
     (68 variable columns, 10299 observations)  
 
 3.  **Use descriptive activity names to name the activities in the data set.**  
+	The details of the resulting descriptive names are below.
 
 4.  **Appropriately label the data set with descriptive variable names.**  
     The details of the resulting descriptive names are below.
